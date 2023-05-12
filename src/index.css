@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.national-park-card {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  overflow: hidden;
+  border: 5px solid #BC6C25;
+  text-align: center;
+  margin-bottom: 25px;
+  border-radius: 9px;
+  color: #606C38;
+}
+
+.card-title{
+  margin: 0;
+  padding: 8px;
+  background: #BC6C25;
+  color: white;
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-image {
+  height: 300px;
+}
+
+.card-image > img{
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+
+
+body {
+  background-color: #FEFAE0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #283618;
+  font-family: 'Chicle', sans-serif;
+  letter-spacing: 2px;
+  border-bottom: 11px solid #BC6C25;
+  text-align: center;
+  background: #DDA15E;
+}
+
+
+  .header > h1 {
+    font-size: 3em;
+    text-shadow: -2px 2px #bc6c25, -4px 4px #dda15e, -8px 8px #606c38;
+  }
+
+  .header > img {
+    height: 50px;
+    margin-left: 14px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 16px;
+    padding-top: 12x;
+    line-height: 38px;
+    background: #283618;
+    color: #FEFAE0;
+    font-weight: bold;
+    border: none;
+    transition: all .3s ease-in-out
+  }
+
+  .national-park-detail-card > button {
+    border-radius: 0px;
+    box-shadow: -1px -1px 10px black;
+  }
+
+  button.orange {
+    background: #BC6C25;
+  }
+
+  .national-park-detail-card > button:hover{
+    box-shadow: 1px 1px 10px black;
+  }
+  
+  button:hover {
+    opacity: .9;
+    cursor: pointer;
+  }
+
+  button:active {
+    opacity: 1;
+  }
+
+  .national-park-detail-card {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    overflow: hidden;
+    border: 5px solid #BC6C25;
+    border-radius: 9px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .card-detail-section {
+    padding: 9px 0 0 9px;
+  }
+
+  .card-detail-section > h4 ~ * {
+    padding-left: 9px;
+  }
+
+  .card-detail-section > h4 {
+    margin: 0;
+    text-align: left;
+    text-transform: uppercase;
+    color: #bc6d2d;
+    font-size: 1.4rem;
+    font-family: Georgia, sans-serif;
+    letter-spacing: 2px;
+    margin-top: 10px;
+  }
+
+  ul.activities{
+    list-style: none;
+    display: flex;
+  }
+
+  ul.activities li{
+    margin-right: 5px;
+    padding-right: 4px;
+    border-right: 1px solid black
+  }
+
+  ul.activities li:last-child{
+    border-right: none;
+  }
+
+  .card-detail-cost-row{
+    display: flex;
+  }
+
+  .card-detail-cost-row p:first-child{
+    margin-right: 5px;
+    align-self: center;
+  }
+
+  .card-detail-cost-row p:last-child{
+    padding-left: 8px;
+    border-left: 1px solid black;
+  }
+
+
+  .additional-images-carousel {
+    display: flex;
+    overflow: scroll;
+  }
+
+  footer.card-detail-section {
+    padding: 0;
+    background: #BC6C25;
+    color: #FEFAE0;
+  }
+
+  footer.card-detail-section > h4 {
+    color: #FEFAE0;
+    padding-left: 10px;
+  }
+
+  .contact-information {
+    display: flex;
+    width: 100%;
+    background: #BC6C25;
+    justify-content: space-between;
+  }
+
+  .contact-information * {
+    text-align: center;
+    color: cornsilk;
+    align-self: center;
+  }
+
+  .contact-information p:first-child {
+    flex-grow: 1;
+  }
+
+  .contact-information a:last-child {
+    flex-grow: 2;
+  }
+  
+  .card-detail-section.no-padding {
+    padding-left: 0px
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    background: #DDA15E;
+    border-bottom: 11px solid #BC6C25;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+  }
+
+nav li {
+    flex-grow: 1;
+    text-align: center;
+    list-style: none;
+    align-self: center;
+    line-height: 4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all .3s ease-in-out
+  }
+
+  nav li:hover{
+    text-shadow: -2px 2px #bc6c25, -3px 3px #dda15e, -4px 4px #606c38;
+    cursor: pointer;
+  }
+
+  nav li:active {
+    text-shadow: none;
+  }
+
+  nav li a {
+    color: #283618;
+    text-decoration: none;
+  }
+
+  .star-container {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .star {
+    list-style: none;
+    margin-right: 20px;
+    font-size: 26px;
+    color: gold;
+    text-shadow: 1px 0px 0px black;
+  }
+
+  .detail-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .stupid-banner{
+    height: 40px;
+    width: 100%;
+    background-image: url("./caravan-solid.svg");
+    background-repeat: repeat-x;
+    margin-bottom: 25px;
+  }
+
+
+
+  .added-to-trip-banner{
+    width: 100%;
+    font-size: 16px;
+    padding-top: 12x;
+    line-height: 38px;
+    background: #BC6C25;
+    color: #FEFAE0;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+  }
+
+  .search-bar{
+    width: 100%;
+    margin: 10px;
+  }
+
+
+  .national-park-card > .star-container {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 4px 10px 0;
+    background: #BC6C25;
+  }
+
+  #search{
+    width: 99.4%;
+    text-align: center;
+    padding: 0px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .close-out{
+    width: 30px;
+  }
